@@ -11,7 +11,7 @@ const mainAsync = async () => {
     // eslint-disable-next-line no-useless-return
     if (message.author.bot) return;
 
-    message.reply('brrr');
+    message.reply(config.messages[Math.floor(Math.random() * config.messages.length)]);
   });
 
   bot.on('ready', () => {

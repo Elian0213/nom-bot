@@ -1,3 +1,4 @@
 type Config = {
-    token: string
+    token: string;
+    messages: string[]
 }
